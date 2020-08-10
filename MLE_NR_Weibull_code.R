@@ -48,3 +48,4 @@ MLE_NR_Weibull <- function(y, shape = 2, maxiter = 100, epsilon = 0.000000001, s
   return(results)
 
 }
+
