@@ -43,7 +43,7 @@ MLE_NR_Weibull <- function(y, shape = 2, maxiter = 100, epsilon = 0.000000001, s
     LogLikelihood[i] <- sum( log(shape) + (shape - 1)*log(y) - shape*log(Estimator[i,1]) - (y/Estimator[i,1])^shape )
   }
 
-  results <- cbind(format(Estimator, nsmall=6), Likelihood, LogLikelihood)
+  results <- cbind(format(Estimator, nsmall = 6), Likelihood, LogLikelihood)
   colnames(results) <- c("ML Estimator", "Likelihood", "Log-Likelihood")
   return(results)
 
